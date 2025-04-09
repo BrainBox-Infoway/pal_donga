@@ -1,0 +1,21 @@
+.test-sec{padding:36px 0;}
+section.rich-text__blocks{padding: 40px 0 52px;width: 100%;margin: 0 auto;}
+section.rich-text__blocks button{padding: 14px 3rem;background-color:rgb(137 132 132); border: none;display:inline-flex;align-items:center;justify-content:center;}
+section.rich-text__blocks button a{font-size: 1.3rem;color: #fff;text-decoration: none; font-size: 1.5rem;letter-spacing: 1px;}
+section.rich-text__blocks.center{text-align:center;}
+section.rich-text__blocks.left{text-align:left;}
+section.rich-text__blocks.right{text-align:right;}
+section.rich-text__blocks.hxxl{font-size:65px;}
+section.rich-text__blocks.hxl{font-size:60px;}
+section.rich-text__blocks.h0{font-size:55px;}
+section.rich-text__blocks.h1{font-size:45px;}
+section.rich-text__blocks.h2{font-size: 40px;color: #000;}
+.content_col{padding: 6rem 7rem 7rem;}
+
+/* Multicolumn Test Section */
+.multicolumn {padding:36px 0;}
+.multi-conlum .gird .grid__item{padding: 2.5rem;}
+.multicolumn .grid .grid__item h3{margin:0;}
+.multicolumn .grid .center{text-align:center;}
+.multicolumn  button{padding: 14px 3rem;background-color:rgb(137 132 132); border: none;display:inline-flex;align-items:center;justify-content:center;margin-top: 4rem;}
+.multicolumn  button a{font-size: 1.3rem;color: #fff;text-decoration: none; font-size: 1.5rem;letter-spacing: 1px;}

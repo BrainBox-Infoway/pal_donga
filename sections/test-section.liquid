@@ -1,0 +1,135 @@
+<div class="color-{{ section.settings.color_scheme }} gradient test-sec">
+<div class="page-width  grid">
+<div class="grid__item content_col">
+ {%- for block in section.blocks -%}
+    <section class="rich-text__blocks {{ section.settings.desktop_content_position }}">
+        <h2 class="{{ section.settings.heading_font_size }}">{{ section.settings.heading_text }}</h2>
+        <p>{{ section.settings.content }}</p>
+      <button><a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></button>
+    </section>
+{%- endfor -%}
+</div>
+
+<div class="image-with-text__text-item grid__item">
+{%- if section.settings.image != blank -%}
+{%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+{%- capture sizes -%}
+(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+(min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+{%- endcapture -%}
+{{
+    section.settings.image
+    | image_url: width: 1500
+    | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+}}
+{%- else -%}
+  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+{%- endif -%}  
+</div>
+</div>
+</div>
+
+
+
+{% schema %}
+{
+"name": "Test Section",
+"settings": [
+
+],
+
+"blocks": 
+[
+{
+   "type": "heading",
+  "name": "t:sections.image-with-text.blocks.heading.name",
+  "limit": 1,
+  "settings": [
+      {
+        "type": "select",
+        "id": "desktop_content_position",
+        "options": [
+      {
+        "value": "left",
+        "label": "left"
+      },
+      {
+        "value": "center",
+        "label": "center"
+      },
+      {
+        "value": "right",
+        "label": "right"
+      }
+      ],
+      "default": "center",
+      "label": "Content position"
+    },
+{
+"type": "richtext",
+"id": "heading_text",
+"label": "Heading"
+},
+{
+"type": "select",
+"id": "heading_font_size",
+"options": [
+              {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+              },
+              {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+              },
+              {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+              },
+              {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+              },
+              {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
+              }
+        ],
+              "default": "h1",
+              "label": "t:sections.all.heading_size.label"
+              },
+              {
+              "type": "richtext",
+              "id" : "content",
+              "label": "Content"
+              },
+              {
+              "type": "text",
+              "id": "button_label",
+              "default": "t:sections.rich-text.blocks.buttons.settings.button_label_1.default",
+              "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+              "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+              },
+              {
+              "type": "url",
+              "id": "button_link",
+              "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+              },
+              {
+              "type": "color_scheme",
+              "id": "color_scheme",
+              "label": "t:sections.all.colors.label",
+              "default": "scheme-1"
+              }    
+            ]
+}
+],
+
+"presets":
+        [
+          {
+            "name": "Test Section"
+          }
+        ]
+}
+{% endschema %}
