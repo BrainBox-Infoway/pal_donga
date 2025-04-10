@@ -46,8 +46,8 @@
                     style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
                   {% else %}
                     style="--ratio-percent: 100%"
-                  {% endif %}
-                >
+                  {% endif %}>
+                
                   {%- if block.settings.image != blank -%}
                     {%- liquid
                       if section.settings.desktop_layout == 'left'
