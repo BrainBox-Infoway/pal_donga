@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_QDi7UW": {
@@ -6,7 +15,7 @@
         "slide_Qz8VVz": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sunlight-creeps-through-a-bright-living-room.jpg",
+            "image": "shopify://shop_images/sunlight-creeps-through-a-bright-living-room.jpg",
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -24,7 +33,7 @@
         "slide_X947TY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/working-from-home.jpg",
+            "image": "shopify://shop_images/working-from-home.jpg",
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -61,9 +70,9 @@
         "column_JtxgDr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
+            "image": "shopify://shop_images/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br\/><br\/><\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/><br/></p>",
             "link_label": "",
             "link": "",
             "color_scheme": "scheme-2"
@@ -72,9 +81,9 @@
         "column_jgt4gw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
+            "image": "shopify://shop_images/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br\/><\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/></p>",
             "link_label": "",
             "link": "",
             "color_scheme": "scheme-2"
@@ -83,9 +92,9 @@
         "column_KpJmey": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
+            "image": "shopify://shop_images/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br\/><\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/></p>",
             "link_label": "",
             "link": "",
             "color_scheme": "scheme-2"
@@ -94,9 +103,9 @@
         "column_9bR4Rx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
+            "image": "shopify://shop_images/glass-with-iced-red-beverage-reflects-on-a-white-table.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br\/><br\/><\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/><br/></p>",
             "link_label": "",
             "link": "",
             "color_scheme": ""
@@ -136,7 +145,7 @@
         "row_epYUqV": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/silver-lamp-on-a-white-table-next-to-books.jpg",
+            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
             "caption": "Caption",
             "heading": "Row",
             "heading_size": "h1",
@@ -148,7 +157,7 @@
         "row_gUEcbC": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/two-people-surfing-in-blue-choppy-water.jpg",
+            "image": "shopify://shop_images/two-people-surfing-in-blue-choppy-water.jpg",
             "caption": "CAPTION",
             "heading": "Row",
             "heading_size": "h1",
@@ -160,7 +169,7 @@
         "row_kRijWy": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image": "shopify://shop_images/green-and-white-marbled-coloring.jpg",
             "caption": "CAPTION",
             "heading": "Row",
             "heading_size": "h1",
@@ -172,7 +181,7 @@
         "row_Whgw4X": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rack-of-blank-tshirts.jpg",
+            "image": "shopify://shop_images/rack-of-blank-tshirts.jpg",
             "caption": "CAPTION",
             "heading": "Row",
             "heading_size": "h1",
@@ -212,7 +221,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br\/><br\/><\/p>",
+            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/><br/></p>",
             "page": ""
           }
         },
@@ -221,7 +230,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "page": ""
           }
         },
@@ -230,7 +239,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "page": ""
           }
         },
@@ -239,7 +248,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "row_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "page": ""
           }
         }
@@ -270,19 +279,21 @@
       "blocks": {
         "image_PTNkkX": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/small-business-interior.jpg"
+          }
         },
         "product_nGAYKA": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "jacket",
             "second_image": false
           }
         },
         "collection_L37bKR": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         }
       },
@@ -301,26 +312,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "collage_dev_WpxQAa": {
-      "type": "collage-dev",
-      "blocks": {
-        "image_yfi3it": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_yfi3it"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -329,7 +320,6 @@
     "image_banner_test_mia6Cc",
     "multi_row_dev_WymA8k",
     "collapsible_content_dev_8qyBfN",
-    "collage_NNAjCh",
-    "collage_dev_WpxQAa"
+    "collage_NNAjCh"
   ]
 }
