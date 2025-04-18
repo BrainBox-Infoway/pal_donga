@@ -17,6 +17,8 @@
         {{- collection.title | escape -}}
       </h1>
 
+      {{ collection.metafields.custom.description | metafield_tag }}
+
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}

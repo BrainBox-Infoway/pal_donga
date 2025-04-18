@@ -315,7 +315,6 @@
     },
     "contact_form_3wULtQ": {
       "type": "contact-form",
-      "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "Contact form",
         "heading_size": "h1",

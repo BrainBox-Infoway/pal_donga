@@ -15,6 +15,8 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
+    {% comment %} <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet"> {% endcomment %}
+
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
@@ -48,6 +50,353 @@
     %}
 
     {% style %}
+      /* Custom font link */
+      @font-face {
+        font-family: 'Roboto Serif';
+        src: url("{{ 'RobotoSerif-Bold.woff2' | file_url }}") format('woff2'),
+        url("{{ 'RobotoSerif-Bold.woff' | file_url }}") format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-Black.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-Black.woff' | file_url }}") format('woff');
+          font-weight: 900;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-BlackItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-BlackItalic.woff' | file_url }}") format('woff');    
+          font-weight: 900;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-BoldItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-BoldItalic.woff' | file_url }}") format('woff');
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-ExtraBold.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-ExtraBold.woff' | file_url }}") format('woff');    
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-ExtraBoldItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-ExtraBoldItalic.woff' | file_url }}") format('woff');     
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-Light.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-Light.woff' | file_url }}") format('woff'); 
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-Italic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-Italic.woff' | file_url }}") format('woff'); 
+          font-weight: normal;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-Medium.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-Medium.woff' | file_url }}") format('woff');     
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-ExtraLightItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-ExtraLightItalic.woff' | file_url }}") format('woff');     
+          font-weight: 200;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-LightItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-LightItalic.woff' | file_url }}") format('woff');     
+          font-weight: 300;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-ExtraLight.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-ExtraLight.woff' | file_url }}") format('woff');  
+          font-weight: 200;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-SemiBoldItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-SemiBoldItalic.woff' | file_url }}") format('woff');     
+          font-weight: 600;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-MediumItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-MediumItalic.woff' | file_url }}") format('woff');    
+          font-weight: 500;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-SemiBold.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-SemiBold.woff' | file_url }}") format('woff');       
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-Regular.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-Regular.woff' | file_url }}") format('woff');       
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-Thin.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-Thin.woff' | file_url }}") format('woff');      
+          font-weight: 100;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Roboto Serif';
+          src: url("{{ 'RobotoSerif-ThinItalic.woff2' | file_url }}") format('woff2'),
+          url("{{ 'RobotoSerif-ThinItalic.woff' | file_url }}") format('woff');      
+          font-weight: 100;
+          font-style: italic;
+          font-display: swap;
+      }
+
+
+      /* FuturaStd */
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-Condensed.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-Condensed.woff' | file_url }}") format('woff');     
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-BookOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-BookOblique.woff' | file_url }}") format('woff');    
+          font-weight: normal;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondensedExtraBd.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondensedExtraBd.woff' | file_url }}") format('woff');      
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondensedBold.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondensedBold.woff' | file_url }}") format('woff');      
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondensedBoldObl.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondensedBoldObl.woff' | file_url }}") format('woff');        
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondensedLightObl.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondensedLightObl.woff' | file_url }}") format('woff');     
+          font-weight: 300;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondensedLight.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondensedLight.woff' | file_url }}") format('woff');       
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondExtraBoldObl.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondExtraBoldObl.woff' | file_url }}") format('woff');    
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-CondensedOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-CondensedOblique.woff' | file_url }}") format('woff');    
+          font-weight: 500;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-ExtraBoldOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-ExtraBoldOblique.woff' | file_url }}") format('woff');      
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-Heavy.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-Heavy.woff' | file_url }}") format('woff');     
+          font-weight: 900;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-LightOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-LightOblique.woff' | file_url }}") format('woff');    
+          font-weight: 300;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-ExtraBold.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-ExtraBold.woff' | file_url }}") format('woff');     
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-HeavyOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-HeavyOblique.woff' | file_url }}") format('woff');    
+          font-weight: 900;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-Light.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-Light.woff' | file_url }}") format('woff');  
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-BoldOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-BoldOblique.woff' | file_url }}") format('woff');     
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-Book.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-Book.woff' | file_url }}") format('woff');     
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-Bold.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-Bold.woff' | file_url }}") format('woff');       
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-Medium.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-Medium.woff' | file_url }}") format('woff');    
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Futura Std';
+          src: url("{{ 'FuturaStd-MediumOblique.woff2' | file_url }}") format('woff2'),
+          url("{{ 'FuturaStd-MediumOblique.woff' | file_url }}") format('woff');     
+          font-weight: 500;
+          font-style: italic;
+          font-display: swap;
+      }
+
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -100,14 +449,32 @@
       }
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: {{ settings.type_body_font.weight }};
-        --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+        
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-        --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
+        {% if settings.custom_body_font_family == 'none' -%}
+          --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+          --font-body-style: {{ settings.type_body_font.style }};
+          --font-body-weight: {{ settings.type_body_font.weight }};
+          --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+        {% else %}
+          --font-body-family: {{ settings.custom_body_font_family }};
+          --font-body-style: {{ settings.custom_body_font_family.style }};
+          --font-body-weight: {{ settings.custom_body_font_family.weight }};
+        {% endif %}
+
+        /* Custome Font Link */
+        {% if settings.custom_header_font_family == 'none' -%}
+          --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+          --font-heading-style: {{ settings.type_header_font.style }};
+          --font-heading-weight: {{ settings.type_header_font.weight }};
+        {% else %}
+          --font-heading-family: {{ settings.custom_header_font_family }};
+          --font-heading-style: {{ settings.custom_header_font_family.style }};
+          --font-heading-weight: {{ settings.custom_header_font_family.weight }};
+        {% endif %}
+        
+        --button-font-family: {{ settings.button_font_family.family }};
+         
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
