@@ -161,28 +161,28 @@
               {%- endif -%}
             {% when "Video" %}
                  {%- if section.settings.video == null and section.settings.video_url != null -%}
-            {%- liquid
-              assign loop = ''
-              if section.settings.enable_video_looping
-                assign loop = '&loop=1&playlist=' | append: video_id
-              endif
-            -%}
-            {%- if section.settings.video_url.type == 'youtube' -%}
-              <iframe
-                src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
-                class="js-youtube"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                title="{{ section.settings.description | escape }}"
-              ></iframe>
-            {%- else -%}
-              <iframe
-                src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
-                class="js-vimeo"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                title="{{ section.settings.description | escape }}"
-              ></iframe>
+                    {%- liquid
+                      assign loop = ''
+                      if section.settings.enable_video_looping
+                        assign loop = '&loop=1&playlist=' | append: video_id
+                      endif
+                    -%}
+                    {%- if section.settings.video_url.type == 'youtube' -%}
+                      <iframe
+                        src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                        class="js-youtube"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ section.settings.description | escape }}"
+                      ></iframe>
+                    {%- else -%}
+                      <iframe
+                        src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+                        class="js-vimeo"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ section.settings.description | escape }}"
+                      ></iframe>
             {%- endif -%}
           {%- else -%}
             {{
@@ -195,8 +195,8 @@
                 muted: true
             }}
         {%- endif -%}
-          {% endcase %}}
-        </div>
+        {% endcase %}}
+      </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
