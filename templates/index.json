@@ -12,10 +12,9 @@
     "slideshow_QDi7UW": {
       "type": "slideshow",
       "blocks": {
-        "slide_Qz8VVz": {
-          "type": "slide",
+        "image_zLwKVx": {
+          "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sunlight-creeps-through-a-bright-living-room.jpg",
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -27,31 +26,24 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "color_scheme": "scheme-1"
           }
         },
-        "slide_X947TY": {
-          "type": "slide",
+        "video_m8gNWe": {
+          "type": "video",
           "settings": {
-            "image": "shopify://shop_images/working-from-home.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "enable_video_looping": false,
+            "video": "shopify://files/videos/4496286-hd_1920_1080_30fps.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "color_scheme": "scheme-1"
           }
         }
       },
       "block_order": [
-        "slide_Qz8VVz",
-        "slide_X947TY"
+        "image_zLwKVx",
+        "video_m8gNWe"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -62,21 +54,6 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "video_XK9qY3": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/4496286-hd_1920_1080_30fps.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "multicolumn_dev_HiET8N": {
@@ -341,7 +318,6 @@
   },
   "order": [
     "slideshow_QDi7UW",
-    "video_XK9qY3",
     "multicolumn_dev_HiET8N",
     "image_banner_test_mia6Cc",
     "multi_row_dev_WymA8k",
