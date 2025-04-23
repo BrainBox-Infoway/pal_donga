@@ -122,7 +122,7 @@
       >
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {% case block.type %}
-            {% when "Image" %}
+            {% when "image" %}
               {%- if block.settings.image -%}
                 {%- liquid
                   assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
@@ -159,7 +159,7 @@
                   {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
               {%- endif -%}
-            {% when "Video" %}
+            {% when "video" %}
                  {%- if section.settings.video == null and section.settings.video_url != null -%}
                       {%- liquid
                         assign loop = ''
