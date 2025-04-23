@@ -164,6 +164,7 @@
                 {%- endif -%}
               {%- endif -%}
             {% when "video" %}
+        <div class="{% if section.settings.full_width %} global-media-settings--full-width{% endif %}"></div>
                   {%- if block.settings.video == null and  block.settings.video_url != null -%}
                           {%- liquid
                             assign loop = ''
