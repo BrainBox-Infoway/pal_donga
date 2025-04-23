@@ -123,6 +123,7 @@
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {% case block.type %}
             {% when "image" %}
+              jfdkjfddnf== {{ block.settings.video }}
               {%- if block.settings.image -%}
                 {%- liquid
                   assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
@@ -616,7 +617,7 @@
       "type": "video",
       "name": "Video",
       "settings": [
-            {
+    {
       "type": "checkbox",
       "id": "enable_video_looping",
       "label": "t:sections.video.settings.enable_video_looping.label",
