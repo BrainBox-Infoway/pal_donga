@@ -15,6 +15,7 @@
         "image_zLwKVx": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/clothing-on-a-shop-rack-with-flowers-in-the-background.jpg",
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -36,7 +37,7 @@
             "video": "shopify://files/videos/4496286-hd_1920_1080_30fps.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
-            "full_width": false,
+            "full_width": true,
             "color_scheme": "scheme-1"
           }
         }
