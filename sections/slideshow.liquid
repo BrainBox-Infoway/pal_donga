@@ -164,7 +164,7 @@
                 {%- endif -%}
               {%- endif -%}
             {% when "video" %}
-        <div class="{% if section.settings.full_width %} global-media-settings--full-width{% endif %}"></div>
+        <div class="{% if section.settings.full_width %} global-media-settings--full-width{% endif %}">
                   {%- if block.settings.video == null and  block.settings.video_url != null -%}
                           {%- liquid
                             assign loop = ''
@@ -200,6 +200,7 @@
                             muted: true
                         }}
               {%- endif -%} 
+          </div>
         {% endcase %}
       </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
