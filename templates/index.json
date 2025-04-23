@@ -34,26 +34,37 @@
         "video_m8gNWe": {
           "type": "video",
           "settings": {
-            "enable_video_looping": false,
+            "enable_video_looping": true,
             "video": "shopify://files/videos/4496286-hd_1920_1080_30fps.mp4",
+            "image_overlay_opacity": 20,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
             "full_width": true,
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
           }
         },
         "image_PYpTiB": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 20,
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
@@ -77,21 +88,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "video_pEFgnC": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/4496286-hd_1920_1080_30fps.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_dev_HiET8N": {
       "type": "multicolumn-dev",
       "blocks": {
@@ -102,8 +98,7 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/><br/></p>",
             "link_label": "",
-            "link": "",
-            "color_scheme": "scheme-2"
+            "link": ""
           }
         },
         "column_jgt4gw": {
@@ -113,8 +108,7 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/></p>",
             "link_label": "",
-            "link": "",
-            "color_scheme": "scheme-2"
+            "link": ""
           }
         },
         "column_KpJmey": {
@@ -124,8 +118,7 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/></p>",
             "link_label": "",
-            "link": "",
-            "color_scheme": "scheme-2"
+            "link": ""
           }
         },
         "column_9bR4Rx": {
@@ -135,8 +128,7 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<br/><br/></p>",
             "link_label": "",
-            "link": "",
-            "color_scheme": ""
+            "link": ""
           }
         }
       },
@@ -150,13 +142,13 @@
         "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "circle",
         "button_label": "Button label",
         "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -354,7 +346,6 @@
   },
   "order": [
     "slideshow_QDi7UW",
-    "video_pEFgnC",
     "multicolumn_dev_HiET8N",
     "image_banner_test_mia6Cc",
     "multi_row_dev_WymA8k",
