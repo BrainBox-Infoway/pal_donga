@@ -45,7 +45,7 @@
         "image_PYpTiB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/self-serve-coffee-shop.jpg",
+            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -53,7 +53,7 @@
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
+            "show_text_box": false,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
