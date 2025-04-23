@@ -160,7 +160,7 @@
                 {%- endif -%}
               {%- endif -%}
             {% when "video" %}
-              <div class="video-section isolate{% unless section.settings.full_width %}{% endunless %} section-{{ section.id }}-padding">
+              <div class="video-section {% unless section.settings.full_width %}{% endunless %}">
                  {%- if block.settings.video == null and  block.settings.video_url != null -%}
                           {%- liquid
                             assign loop = ''
