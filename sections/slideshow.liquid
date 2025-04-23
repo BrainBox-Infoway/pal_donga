@@ -160,7 +160,6 @@
                 {%- endif -%}
               {%- endif -%}
             {% when "video" %}
-              <div class="{% unless section.settings.full_width %}{% endunless %}">
                  {%- if block.settings.video == null and  block.settings.video_url != null -%}
                           {%- liquid
                             assign loop = ''
@@ -193,11 +192,9 @@
                             autoplay: true,
                             loop: section.settings.enable_video_looping,
                             controls: true,
-                            muted: false
+                            muted: true
                         }}
               {%- endif -%}
-          </div>
-                
         {% endcase %}
       </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
