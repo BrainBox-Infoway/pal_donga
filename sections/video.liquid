@@ -80,7 +80,8 @@
         </span>
       </button>
       <template>
-        {%- if section.settings.video == null and section.settings.video_url != null -%}
+       {%- if section.settings.video == null and section.settings.video_url != null -%}
+        {%- assign video_id = section.settings.video_url.id -%}
           {%- liquid
             assign loop = ''
             if section.settings.enable_video_looping
@@ -91,7 +92,7 @@
             <iframe
               src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
               class="js-youtube"
-              allow="autoplay; encrypted-media"
+              allow="autoplay; encrypted-media fullscreen"
               allowfullscreen
               title="{{ section.settings.description | escape }}"
             ></iframe>
@@ -99,12 +100,12 @@
             <iframe
               src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
               class="js-vimeo"
-              allow="autoplay; encrypted-media"
+              allow="autoplay; encrypted-media fullscreen"
               allowfullscreen
               title="{{ section.settings.description | escape }}"
             ></iframe>
           {%- endif -%}
-        {%- else -%}
+          {%- else -%}
           {{
             section.settings.video
             | video_tag:
@@ -114,7 +115,7 @@
               controls: true,
               muted: true
           }}
-        {%- endif -%}
+       {%- endif -%}  
       </template>
     </deferred-media>
   </div>

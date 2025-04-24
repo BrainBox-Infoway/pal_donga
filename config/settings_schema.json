@@ -184,7 +184,7 @@
         "type": "font_picker",
         "id": "button_font_family",
         "default": "assistant_n4",
-        "label": "Button font family"
+        "label": "t:settings_schema.typography.settings.type_body_font.label"
       }
     ]
   },
